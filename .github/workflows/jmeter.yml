@@ -12,12 +12,12 @@ on:
     inputs:
       script:
         description: 'Path to the JMX script'
-        default: 'aDVBanking_Single_User.jmx'
+        default: 'JmeterScripts/aDVBanking_Single_User.jmx'
         required: true
 
 env:
   JMETER_VERSION: '5.5'
-  JMX_FILE: ${{ github.event.inputs.script || 'aDVBanking_Single_User.jmx' }}
+  JMX_FILE: ${{ github.event.inputs.script || 'JmeterScripts/aDVBanking_Single_User.jmx' }}
 
 jobs:
   jmeter:
